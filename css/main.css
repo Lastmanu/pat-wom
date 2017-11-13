@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'cera';
+  src: url("../fonts/Cera-Black.eot");
+  src: url("../fonts/Cera-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Cera-Black.woff") format("woff"), url("../fonts/Cera-Black.ttf") format("truetype"), url("../fonts/Cera-Black.otf") format("opentype"), url("../fonts/Cera-Black.svg#Cera-Black") format("svg");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'cera';
+  src: url("../fonts/Cera-Bold.eot");
+  src: url("../fonts/Cera-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Cera-Bold.woff") format("woff"), url("../fonts/Cera-Bold.ttf") format("truetype"), url("../fonts/Cera-Bold.otf") format("opentype"), url("../fonts/Cera-Bold.svg#Cera-Bold") format("svg");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'cera';
+  src: url("../fonts/cera-medium-webfont.eot");
+  src: url("../fonts/cera-medium-webfont?#iefix") format("embedded-opentype"), url("../fonts/cera-medium-webfont.woff") format("woff"), url("../fonts/cera-medium-webfont.ttf") format("truetype"), url("../fonts/cera-medium-webfont.svg#cera-medium-webfont") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cera';
+  src: url("../fonts/cera-regular-webfont.eot");
+  src: url("../fonts/cera-regular-webfont.otf");
+  src: url("../fonts/cera-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cera-regular-webfont.woff") format("woff"), url("../fonts/cera-regular-webfont.ttf") format("truetype"), url("../fonts/cera-regular-webfont.svg#cera-regular-webfont") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cera';
+  src: url("../fonts/cera-light-webfont.eot");
+  src: url("../fonts/cera-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cera-light-webfont.woff") format("woff"), url("../fonts/cera-light-webfont.ttf") format("truetype"), url("../fonts/cera-light-webfont.svg#cera-light-webfont") format("svg");
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  background: #fff;
+  font-family: "cera";
+  font-size: 14px;
+  font-font-weight: 300;
+  margin: 0;
+  font-feature-settings: "lnum";
+}
+
+.main_pat {
+  max-width: 964px;
+  margin: 0 auto;
+}

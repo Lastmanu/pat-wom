@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	 <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1"/>
+	<title>WOM | PAT</title>
+	<!-- CUSTOM -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="dist/css/main.css">
+	<!-- JQUERY -->
+	<script src="dist/plugins/jquery-3.2.1.min.js"></script>
+	<script src="dist/scripts/funcion.js"></script>
+</head>
+<body>
+	<main class="main_pat">
+
+		<header class="main_pat-head">
+			<img src="dist/images/logopatpass.png" alt="Logo Pat Pass">
+			<h1>Pago Automático de Cuentas con Tarjetas de Crédito (PatPass)</h1>
+			<div class="main_pat-login">
+				<a href="#">Ayuda</a>
+				<a href="#">Condiciones Generales</a>
+				<a href="#">Cerrar sesión</a>
+			</div>
+		</header>
+
+		<section class="main_pat-content">
+			<h2 class="title_content">Agregar cuenta nueva al Pago Automático</h2>
+
+			<div class="main_pat-menu">
+				<a href="#;" class="main_pat-menu-link active"><i><img src="dist/images/icon-check.png" alt="check"></i>Ingreso de Datos</a>
+				<a href="#;" class="main_pat-menu-link "><i><img src="dist/images/icon-check.png" alt="check"></i>Confirmación</a>
+				<a href="#;" class="main_pat-menu-link "><i><img src="dist/images/icon-check.png" alt="check"></i>Comprobante</a>
+			</div>
+
+			<h2 class="title_content regular">Ingreso de datos</h2>
+
+			<section class="main_pat-box">
+				<h3 class="subtitle_content"><i class="icon_pat"><img src="dist/images/icon-user.png" alt="Icono Usuario"></i>Información del Cliente</h3>
+				<div class="box_columns">
+					<div class="box_columns-item">
+						<label for="nombre" class="regular-label">Nombre:</label>
+						<input type="text" class="regular-input" id="nombre">
+					</div>
+					<div class="box_columns-item">
+						<label for="apellido-p" class="regular-label">Apellido Paterno:</label>
+						<input type="text" class="regular-input" id="apellido-p">
+					</div>
+					<div class="box_columns-item">
+						<label for="apellido-m" class="regular-label">Apellido Materno</label>
+						<input type="text" class="regular-input error" id="apellido-m">
+						<span class="regular-error">Debes ingresar un XXXXXXXX</span>
+					</div>
+				</div>
+				
+			</section>
+
+			<section class="main_pat-box">
+				<h3 class="subtitle_content"><i class="icon_pat"><img src="dist/images/icon-puzzle.png" alt="Icono Informacion"></i>Información del Servicio</h3>
+
+				<div class="box_columns">
+					<div class="box_columns-item">
+						<label for="nombre-empresa" class="regular-label">Nombre de la empresa:</label>
+						<input type="text" class="regular-input disabled" id="nombre-empresa" value="WOM PAT" disabled="disabled">
+					</div>
+					<div class="box_columns-item">
+						<label for="id-servicio" class="regular-label">ID Servicio:</label>
+						<input type="text" class="regular-input disabled" id="id-servicio" value="191214" disabled="disabled">
+					</div>
+				</div>
+			</section>
+
+			<section class="main_pat-box">
+				<h3 class="subtitle_content"><i class="icon_pat"><img src="dist/images/icon-creditcard.png" alt="Icono Tarjeta"></i>Información de Pago</h3>
+				<div class="box_columns">
+					<div class="box_columns-item">
+						<label for="n-tarjeta" class="regular-label">Número de Tarjeta:</label>
+						<input type="text" class="regular-input numero-tarjeta" id="n-tarjeta">
+					</div>
+				</div>
+
+				<div class="box_monto_maximo">
+					<h4 class="subtitle_form">Desea agregar un monto máximo a pagar</h4>
+					<div class="box_seleccion">
+						<div class="box_input_radio">
+							<input class="regular-radio" type="radio" id="no" name="radio-group">
+							<label for="no">NO</label>
+						</div>
+						<div class="box_seleccion_si">
+							<div class="box_input_radio columns">
+								<input class="regular-radio" type="radio" id="si" name="radio-group">
+								<label for="si">Si</label>
+							</div>
+							<div class="box_input-second columns">
+								<span>$</span>
+								<input type="text" class="regular-input small">
+							</div>
+							<div class="columns">
+								<span class="text_agregado">En caso que el monto a pagar sea mayor a este número, no se efectuará el pago</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="box_columns">
+					<div class="box_columns-item">
+						<label for="guardar-patpass" class="regular-label">Guardar este PatPass como:</label>
+						<input type="text" class="regular-input" id="guardar-patpass">
+					</div>
+					<div class="box_columns-item align-bot">
+						<span class="text_agregado">Elige un nombre fácil de recordar como “Luz casa playa”</span>
+					</div>
+				</div>
+			</section>
+
+			<section class="main_pat-box">
+				<h3 class="subtitle_content"><i class="icon_pat"><img src="dist/images/icon-datos.png" alt="Icono datos"></i>Datos del Contacto</h3>
+
+				<div class="box_columns margen-bot-big">
+					<div class="box_columns-item">
+						<label for="email" class="regular-label">Email:</label>
+						<input type="text" class="regular-input margen-bot" id="email">
+						<div class="box_input_checkbox">
+							<input type="checkbox" class="regular-checkbox" id="notificacion">
+							<label for="notificacion">Deseo notificación vía email.</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="box_columns">
+					<div class="box_columns-item">
+						<label for="n-cell" class="regular-label">Teléfono celular:</label>
+						<div class="box_input-second columns">
+							<span>+56</span>
+							<input type="text" class="regular-input small">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="box_alert ">
+				<div class="box_alert-column">
+					<img src="dist/images/icon-i-circle.png" alt="Información">
+				</div>
+				<div class="box_alert-column">
+					<p class="box_alert-text">Para validar tus datos de tarjeta, <strong>necesitamos que efectúes una transferencia de $1</strong> (Un peso). A continuación serás redirigido a tu banco para realizar la transferencia </p>
+				</div>
+				<div class="box_alert-column">
+					<button class="btn_primary">CONTINUAR</button>
+				</div>
+			</div>
+
+		</section>
+
+	</main>
+</body>
+</html>
