@@ -623,6 +623,9 @@ body {
   .main_pat .box_alert-column {
     margin-bottom: 10px;
   }
+  .main_pat .box_alert-column:first-child, .main_pat .box_alert-column:nth-child(2) {
+    margin-right: 0px;
+  }
   .main_pat-menu {
     flex-flow: column;
   }

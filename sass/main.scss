@@ -644,6 +644,10 @@ body {
 
       &-column {
         margin-bottom:10px;
+        &:first-child,
+        &:nth-child(2) {
+          margin-right:0px;
+        }
       }
     }
 
