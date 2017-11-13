@@ -87,7 +87,7 @@ body {
   &-menu {
     display:flex;
     justify-content:center;
-    aling-items:center;
+    align-items:center;
     background-color:#BEBEBE;
     margin-bottom:20px;
 
@@ -398,12 +398,15 @@ body {
       &:first-child {
         margin-bottom:0;
       }
+      &:nth-child(2) {
+        min-width:185px;
+      }
     }
   }
 
   .box_input-second {
     font-size:0;
-
+    position:relative;
     span {
       color:#535353;
       display:inline-block;
@@ -417,15 +420,22 @@ body {
       padding:0 10px;
       line-height:40px;
       vertical-align:middle;
+      position:absolute;
     }
     .regular-input {
       border: 0;
       border-radius: 0 4px 4px 0;
       box-shadow: inset 0px 2px 5px 0 rgba(0, 0, 0, 0.22);
       vertical-align: middle;
+    
+        padding-left:36px;
+      
 
       &.small {
         min-width:100px;
+      }
+      &.phone {
+        padding-left:55px;
       }
     }
   }
@@ -559,14 +569,102 @@ body {
   }
 }
 
-
-
-
-@media screen and (max-width: 480px) {
-
+@media screen and (max-width: 880px) {
   .main_pat {
     padding-right:15px;
     padding-left:15px;
+    .regular-input {
+      min-width:200px;
+    }
   }
+}
+
+@media screen and (max-width: 750px) {
+  .main_pat {
+
+    &-head {
+      h1 {
+        font-size:20px;
+      }
+      
+    }
+    &-content {
+      .title_content {
+          font-size: 24px;
+      }
+      .subtitle_content {
+        font-size:20px;
+      }
+    }
+    &-box {
+      padding:20px 15px;
+    }
+
+    .box_columns {
+      flex-flow:column nowrap;
+
+      &-item {
+        width:100%;
+        margin-right:0;
+        margin-bottom:20px;
+      }
+    }
+
+
+
+    .regular-input {
+      width:100%;
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+
+  .main_pat {
+    .box_alert {
+      flex-flow:column nowrap;
+
+      &-column {
+        margin-bottom:10px;
+      }
+    }
+
+    &-menu {
+      flex-flow:column;
+
+      &-link {
+        width:100%;
+        margin-right:0;
+
+        &:before,
+        &:after  {
+          display:none;
+        }
+      }
+
+      &-link:not(.active) {
+        display:none;
+      }
+    }
+
+    .box_seleccion_si {
+      flex-flow:wrap;
+
+      .columns{
+        &:nth-child(2),
+        &:nth-child(1) {
+          margin-bottom:15px;
+        }
+        &:nth-child(2) {
+          margin-right:0;
+        }
+        &:last-child {
+          margin-right:0;
+        }
+        
+      }
+    }
+  }
+
 
 }

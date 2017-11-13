@@ -94,7 +94,7 @@ body {
 .main_pat-menu {
   display: flex;
   justify-content: center;
-  aling-items: center;
+  align-items: center;
   background-color: #BEBEBE;
   margin-bottom: 20px;
 }
@@ -402,8 +402,13 @@ body {
   margin-bottom: 0;
 }
 
+.main_pat .box_seleccion_si .columns:nth-child(2) {
+  min-width: 185px;
+}
+
 .main_pat .box_input-second {
   font-size: 0;
+  position: relative;
 }
 
 .main_pat .box_input-second span {
@@ -419,6 +424,7 @@ body {
   padding: 0 10px;
   line-height: 40px;
   vertical-align: middle;
+  position: absolute;
 }
 
 .main_pat .box_input-second .regular-input {
@@ -426,10 +432,15 @@ body {
   border-radius: 0 4px 4px 0;
   box-shadow: inset 0px 2px 5px 0 rgba(0, 0, 0, 0.22);
   vertical-align: middle;
+  padding-left: 36px;
 }
 
 .main_pat .box_input-second .regular-input.small {
   min-width: 100px;
+}
+
+.main_pat .box_input-second .regular-input.phone {
+  padding-left: 55px;
 }
 
 .main_pat .box_alert {
@@ -554,9 +565,72 @@ body {
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 880px) {
   .main_pat {
     padding-right: 15px;
     padding-left: 15px;
+  }
+  .main_pat .regular-input {
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .main_pat-head h1 {
+    font-size: 20px;
+  }
+  .main_pat-content .title_content {
+    font-size: 24px;
+  }
+  .main_pat-content .subtitle_content {
+    font-size: 20px;
+  }
+  .main_pat-box {
+    padding: 20px 15px;
+  }
+  .main_pat .box_columns {
+    flex-flow: column nowrap;
+  }
+  .main_pat .box_columns-item {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .main_pat .regular-input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .main_pat .box_alert {
+    flex-flow: column nowrap;
+  }
+  .main_pat .box_alert-column {
+    margin-bottom: 10px;
+  }
+  .main_pat-menu {
+    flex-flow: column;
+  }
+  .main_pat-menu-link {
+    width: 100%;
+    margin-right: 0;
+  }
+  .main_pat-menu-link:before, .main_pat-menu-link:after {
+    display: none;
+  }
+  .main_pat-menu-link:not(.active) {
+    display: none;
+  }
+  .main_pat .box_seleccion_si {
+    flex-flow: wrap;
+  }
+  .main_pat .box_seleccion_si .columns:nth-child(2), .main_pat .box_seleccion_si .columns:nth-child(1) {
+    margin-bottom: 15px;
+  }
+  .main_pat .box_seleccion_si .columns:nth-child(2) {
+    margin-right: 0;
+  }
+  .main_pat .box_seleccion_si .columns:last-child {
+    margin-right: 0;
   }
 }
