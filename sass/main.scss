@@ -356,6 +356,7 @@ body {
       cursor: pointer;
       padding: 2px 0 0 41px;
       line-height: 11px;
+      display:block;
     }
 
     // Box.
@@ -609,13 +610,30 @@ body {
         margin-bottom:20px;
       }
     }
-
-
-
     .regular-input {
       width:100%;
     }
+
+    .box_declaracion {
+      &-column {
+        &:first-child {
+          width:60%;
+          padding-right:40px;
+        }
+      }
+    }
+    .check_informacion {
+      position:relative;
+      width:100%;
+      height:auto;
+      border-radius:0;
+      border:0;
+      top:inherit;
+      right:inherit;
+      padding:10px;
+    }
   }
+
 }
 
 @media screen and (max-width: 620px) {
@@ -664,6 +682,40 @@ body {
         
       }
     }
+
+    .box_declaracion {
+      flex-flow:column;
+      &-column {
+        width:100%;
+        &:first-child {
+          width:100%;
+          margin-bottom:20px;
+        }
+      }
+    }
+    .tabla_datos {
+      padding-left:0;
+      
+      &-row {
+        flex-flow:column;
+      }
+      &-text {
+        min-width:inherit;
+        text-align:left;
+        margin-bottom:5px;
+      }
+      &-text,
+      &-valor {
+        width:100%;
+      }
+    }
+
+    .btn_editar {
+      position:relative;
+      top:inherit;
+      right:inherit;
+    }
+
   }
 
 

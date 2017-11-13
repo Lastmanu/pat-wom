@@ -362,6 +362,7 @@ body {
   cursor: pointer;
   padding: 2px 0 0 41px;
   line-height: 11px;
+  display: block;
 }
 
 .main_pat .regular-checkbox + label:before {
@@ -599,6 +600,20 @@ body {
   .main_pat .regular-input {
     width: 100%;
   }
+  .main_pat .box_declaracion-column:first-child {
+    width: 60%;
+    padding-right: 40px;
+  }
+  .main_pat .check_informacion {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    border: 0;
+    top: inherit;
+    right: inherit;
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 620px) {
@@ -632,5 +647,34 @@ body {
   }
   .main_pat .box_seleccion_si .columns:last-child {
     margin-right: 0;
+  }
+  .main_pat .box_declaracion {
+    flex-flow: column;
+  }
+  .main_pat .box_declaracion-column {
+    width: 100%;
+  }
+  .main_pat .box_declaracion-column:first-child {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .main_pat .tabla_datos {
+    padding-left: 0;
+  }
+  .main_pat .tabla_datos-row {
+    flex-flow: column;
+  }
+  .main_pat .tabla_datos-text {
+    min-width: inherit;
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .main_pat .tabla_datos-text, .main_pat .tabla_datos-valor {
+    width: 100%;
+  }
+  .main_pat .btn_editar {
+    position: relative;
+    top: inherit;
+    right: inherit;
   }
 }
